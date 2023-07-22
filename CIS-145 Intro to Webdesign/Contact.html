@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Stylesheet.css">
+    <meta name="description" content="Education can be expensive. Get educational material at cheaper prices and reduce the cost of your education.  Expand your Knowledge.">
+    <meta name="keywords" content="Books, Book, Education, Educational, Educaton, Educatonal,  Learning">
+    <title>Genesis Educational Bookstore</title>
+</head>
+<body>
+  <div id="logo"></div>
+      <nav>
+        <div class="navbar">
+            <a href="Index.html"><img src="Images/Home_icon.png" alt="Homeicon"> Home</a> 
+            <a href="Products.html"> <img src="Images/Cart_Icon.png" alt="Carticon"> Products</a> 
+            <a class="active" href="Contact.html"><img src="Images/Phone_Icon.png" alt="Phoneicon"> Contact</a> 
+        </div>
+    </nav>
+    <!-- This needs to have a form with 3 input types
+    PHP script must be used to handle all the form data (provide output/send to email)-->
+  <div id="wrapper">
+    <h2> Contact us</h2>
+    <div class="ContactL">
+      <form method="post" action="Contact.php">
+        <div class="NewRow">
+          <div class="LabelSpace">
+            <label for="ContName">First Name</label>
+          </div>
+          <div class="InputSpace">
+            <input type="text" id="ContName" name="ContName" placeholder="John/Jane Doe" required>
+          </div>
+        </div>
+        <div class="NewRow">
+          <div class="LabelSpace">
+            <label for="ContEmail">Email:</label>
+          </div>
+          <div class="InputSpace">
+            <input type="email" id="ContEmail" name="ContEmail" placeholder="Example@genesisEducational.ca">
+          </div>
+        </div>
+        <div class="NewRow">
+          <div class="LabelSpace">
+            <label for="SelectOption">Please select an option:</label>
+          </div>
+          <div class="InputSpace">
+            <select id="SelectOption" name="SelectOption" required>
+              <option value="">Please select an option</option>
+              <option value="Request">Book Request</option>
+              <option value="Inquiry">Order Inquiry</option>
+              <option value="Contact">Contact us</option>
+            </select>
+          </div>
+        </div>
+        <div class="NewRow">
+          <div class="LabelSpace">
+            <label for="subject">Additional Notes:</label>
+          </div>
+          <div class="InputSpace">
+            <textarea id="subject" name="subject" placeholder="If there is anything else we need to know enter it here" ></textarea>
+          </div>
+        </div>
+        <div class="NewRow">
+          <input type="reset" value="Reset">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+  </div>
+  <div class="SubPara"><p>Alternatively you can contact us here:</p>
+      <p><strong>Email: </strong> <a href="mailto:Contact@GenesisEducational.ca">Contact@GenesisEducational.ca</a></p>
+      <p><strong>Telephone: </strong> <a id="Phoneclick" href="tel:888-555-5555" >888-555-5555</a><span id="NoPhoneclick">888-555-5555</span> </p>
+      <p><strong>Physical Address: </strong><a href="https://www.google.com/maps/place/33844+King+Rd,+Abbotsford,+BC+V2S+7M8/@49.0313016,-122.2858506,18z/data=!3m1!4b1!4m5!3m4!1s0x54844abfd31910cf:0x3baf26d9a8bc39dd!8m2!3d49.0313016!4d-122.2858506">33844 King Rd, Abbotsford, BC V2S 7M7</a></p>
+  </div>
+  </div>
+  <footer>
+    <hr>
+    <div class="BottomNav">
+      <a href="Index.html">Index</a>
+      <a href="Products.html">Products</a>
+      <a href="Contact.html">Contact</a>
+      <h5>Copyright Genesis-Educational©</h5>
+    </div>
+  </footer>
+</body>
+</html>
