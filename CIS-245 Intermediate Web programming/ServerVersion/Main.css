@@ -1,0 +1,251 @@
+:root {
+    font-size: 16px;
+    font-family: 'Open Sans';
+    --Nav-Text: #b6b6b6;
+    --Nav-Hover-Text: #ecececae;
+    --Nav-Bg: #23232e;
+    --Nav-BG-Hover: #141418;
+    --main-text-color: #141418;
+    --main-bg-color:#fff;
+    --transition-speed: 600ms;
+  }
+/* Light mode / Dark mode */
+.Dark {
+  --main-text-color: #ffffff;
+  --main-bg-color: #1e1e1e;
+}
+.Light {
+  --main-text-color: #1e1e1e;
+  --main-bg-color: #ffffff;
+}
+#LightIcon {
+  display: none;
+}
+#DarkIcon{
+  display: none;
+}
+.Dark #DarkIcon{
+  display: block;
+}
+.Light #LightIcon{
+  display: block;
+}
+/* End of Light mode / Dark mode */
+body {
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
+  margin: 0;
+  padding: 0;
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+Main {
+  margin-left: 5rem;
+  padding: 1rem;
+}
+/*Navigation Bar*/
+.Navbar {
+  position: fixed;
+  background-color: var(--Nav-Bg);
+  transition: width var(--transition-speed) ease;
+  overflow: scroll;
+  z-index: 1;
+}
+.Navbar-Nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+.Nav-Item {
+  color: white;
+  width: 100%;
+  list-style-type: none;
+}
+.Nav-Link {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  color: var(--Nav-Text);
+  text-decoration: none;
+  filter: grayscale(100%) opacity(0.7);
+  transition: var(--transition-speed);
+  padding-left: 2em;
+}
+.Nav-Link:hover {
+  filter: grayscale(0%) opacity(1);
+  background: var(--Nav-BG-Hover);
+  color: var(--Nav-Hover-Text);
+}
+.Link-Text {
+  display: none;
+  margin-left: 1rem;
+}
+.Nav-Link svg {
+  width: 2rem;
+  min-width: 2rem;
+  margin: 0 1.5rem;
+}
+/*End of Navigation Bar*/
+
+/*Contact*/
+form{
+  display: table;
+  margin-bottom: 5em;
+}
+form .InputRow{
+  display: table-row;
+}
+form label, form input, form select{
+  display: table-cell; 
+  padding: 0.5em;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}  
+.row {
+  margin: 10px -16px;
+}
+/*Portfolio Page*/
+.row,
+.row > .column {
+  padding: 8px;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  display: none;
+}
+.Estimatecolumn {
+  float: left;
+  width: 33.33%;
+  padding-left: 1em;
+  padding-bottom: 1em;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.content {
+  background-color: var(--main-text-color);
+  color: var(--main-bg-color);
+  padding: 10px;
+}
+.show {
+  display: block;
+}
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: var(--main-text-color);
+  color: var(--main-bg-color);
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #ddd;
+}
+.btn.active {
+  background-color: #666;
+  color: var(--main-text-color);
+}
+
+.Error {
+  color: red;
+  font-weight: bolder;
+}
+/* End of Contact */
+#Greeting{
+  display: none;
+}
+li{
+  list-style-type: none;
+}
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+  .Navbar {
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+  }
+  .Navbar-Nav {
+    flex-direction: row;
+  }
+  .Nav-Link {
+    justify-content: center;
+    padding-left: 0;
+  }
+  Main {
+    margin: 0;
+  }
+  .Nav-Item {
+    color: white;
+  }
+  .Nav-item:last-child {
+    margin-top: 0;
+  }
+  .Conclusion{
+    display: block;
+    margin-bottom: 5em;
+  }
+  .SlideshowContainer{
+    margin-bottom: 1em;
+  }
+  form .InputRow{
+    padding: .5em;
+  }
+  form label, form input{
+    display: table-row; 
+    padding: 0.5em;
+  }
+}
+/* Mediumish screens */
+@media only screen and (max-width: 800px) {
+  .Column{
+    display: none;
+  }
+}
+
+/* Large screens */
+@media only screen and (min-width: 600px) {
+  .Navbar {
+    top: 0;
+    width: 5rem;
+    height: 100vh;
+  }
+  .Navbar:hover {
+    width: 12rem;
+  }
+  .Navbar:hover #Greeting {
+    display: inline;
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--Nav-Text);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: var(--transition-speed);
+    padding-left: 2em;
+
+  }
+
+  .Navbar:hover .Link-Text {
+    display: inline;
+  }
+
+  .Navbar:hover .logo-text
+  {
+    left: 0px;
+  }
+  .Nav-Item:last-child {
+    margin-top: auto;
+  }
+
+}

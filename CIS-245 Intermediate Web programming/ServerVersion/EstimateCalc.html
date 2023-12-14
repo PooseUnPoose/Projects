@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="Scripts/Theme.js"></script>
+    <link rel="stylesheet" href="Main.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://kit.fontawesome.com/a405b30641.js" crossorigin="anonymous"></script>
+
+  </head>
+    
+
+<body>
+
+    <nav class="Navbar">
+    <ul class="Navbar-Nav">
+      <li id="Greeting" class="Nav-Item">Welcome</li>
+      <li class="Nav-Item">
+        <a href="#" class="Nav-Link" onclick="redirectToHome()">
+          <i class="fa-solid fa-house"></i>
+            <g class="fa-group">
+            </g>
+          </svg>
+          <span class="Link-Text">Home</span>
+        </a>
+      </li>
+
+      <li class="Nav-Item">
+        <a href="#" class="Nav-Link" onclick="redirectToEstimate()">
+          <i class="fa-solid fa-circle-info"></i>
+            <g class="fa-group">
+            </g>
+          </svg>
+          <span class="Link-Text">Estimates</span>
+        </a>
+      </li>
+
+      <li class="Nav-Item">
+        <a href="#" class="Nav-Link" onclick="redirectToPortfolio()">
+          <i class="fa-solid fa-palette"></i>
+            <g class="fa-group">
+          <span class="Link-Text">Portfolio</span>
+        </a>
+      </li>
+      
+      <li class="Nav-Item">
+        <a href="#" class="Nav-Link" onclick="redirectToContact()">
+          <i class="fa-solid fa-address-book"></i>
+            <g class="fa-group">
+          <span class="Link-Text">Contact</span>
+        </a>
+      </li>
+
+      <li class="Nav-Item" id="ThemeButton">
+        <a href="#" class="Nav-Link">
+          <i id="DarkIcon" class="fa-regular fa-sun"></i>
+          <i id="LightIcon" class="fa-regular fa-moon"></i>  
+          <g class="fa-group">
+              <span class="Link-Text">Theme</span>
+            </g>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!--End Navigation bar-->
+<main>
+  <h2>Estimates Page</h2>
+    <div class="main">
+        <script defer src="Scripts/GetEstimates.js"></script>
+        <h2>An estimate for:</h2>
+        <ul id = CheckedItems></ul>
+        <p> For a subtotal of: $ <span id = "subtotal"></span></p>
+        <p> With a tax of 12%: $<span id = "tax"></span></p>
+        <p> For a total of: $<span id = "total"></span></p>
+    </div>
+    <br>
+    <a class="btn" href="Index.html" style="margin-left: 1em;"> Return to Home</a>
+
+</main>
+</body>
+</html>

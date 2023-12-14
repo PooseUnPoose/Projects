@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="Scripts/Theme.js"></script>
+    <link rel="stylesheet" href="Main.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://kit.fontawesome.com/a405b30641.js" crossorigin="anonymous"></script>
+
+  </head>
+    
+
+<body>
+
+  <nav class="Navbar">
+    <script defer src="Scripts/NavigationBarGreeting.js"></script>
+
+    <ul class="Navbar-Nav">
+      <li id="Greeting" class="Nav-Item">Welcome</li>
+      <li class="Nav-Item">
+        <a href="Index.html" class="Nav-Link">
+          <i class="fa-solid fa-house"></i>
+            <g class="fa-group">
+            </g>
+          </svg>
+          <span class="Link-Text">Home</span>
+        </a>
+      </li>
+
+      <li class="Nav-Item">
+        <a href="Estimates.html" class="Nav-Link">
+          <i class="fa-solid fa-circle-info"></i>
+            <g class="fa-group">
+            </g>
+          </svg>
+          <span class="Link-Text">Estimates</span>
+        </a>
+      </li>
+
+      <li class="Nav-Item">
+        <a href="Portfolio.html" class="Nav-Link">
+          <i class="fa-solid fa-palette"></i>
+            <g class="fa-group">
+          <span class="Link-Text">Portfolio</span>
+        </a>
+      </li>
+      
+      <li class="Nav-Item">
+        <a href="Contact.html" class="Nav-Link">
+          <i class="fa-solid fa-address-book"></i>
+            <g class="fa-group">
+          <span class="Link-Text">Contact</span>
+        </a>
+      </li>
+
+      <li class="Nav-Item" id="ThemeButton">
+        <a href="#" class="Nav-Link">
+          <i id="DarkIcon"  class="fa-regular fa-sun"></i>
+          <i id="LightIcon" class="fa-regular fa-moon"></i>  
+          <g class="fa-group">
+              <span class="Link-Text">Theme</span>
+            </g>
+          </svg>
+        </a>
+      </li>
+
+    </ul>
+  </nav>
+  <!--End Navigation bar-->
+<main>
+  <div class="main">
+    <h2>PORTFOLIO</h2>
+    <script defer src="Scripts/PortfolioFilter.js"></script>
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('Crochet')"> Crochet</button>
+      <button class="btn" onclick="filterSelection('Drawing')"> Drawings</button>
+      <button class="btn" onclick="filterSelection('Crafts')"> Crafts</button>
+    </div>
+    
+    <div class="row">
+      <div class="column Crochet">
+        <div class="content">
+          <img src="Images/CrochetOctopus.JPG" alt="Crochet octopus" style="width:100%; height:10em;">
+          <h4>Crochet Doll</h4>
+          <p>Crochet Octopus Doll</p>
+        </div>
+      </div>
+      <div class="column Crochet">
+        <div class="content">
+        <img src="Images/CrochetMittens.jpg" alt="Mittens" style="width:100%; height:10em;">
+          <h4>Crochet Mittens</h4>
+          <p>Four colour mittens</p>
+        </div>
+      </div>
+      <div class="column Crochet">
+        <div class="content">
+        <img src="Images/CrochetBlanket2.jpg" alt="Blanket on chair" style="width:100%; height:10em;">
+          <h4>Crochet Blanket</h4>
+          <p>Four colour crochet furniture blanket</p>
+        </div>
+      </div>
+      
+      <div class="column Drawing">
+        <div class="content">
+          <img src="Images/DrawingCat.jpg" alt="Cute Drawing of a cat" style="width:100%; height:10em;">
+          <h4>Cat Drawing</h4>
+          <p>A simple drawing of a cat</p>
+        </div>
+      </div>
+      <div class="column Drawing">
+        <div class="content">
+        <img src="Images/DrawingWolf.jpg" alt="Car" style="width:100%; height:10em;">
+          <h4>Wolf Drawing</h4>
+          <p>A detailed drawing of a wolf</p>
+        </div>
+      </div>
+      <div class="column Drawing">
+        <div class="content">
+        <img src="Images/DrawingChibi.jpg" alt="Car" style="width:100%; height:10em;">
+          <h4>Chibi Family</h4>
+          <p>Chibi artwork of faimly from 'SpyXFamily'</p>
+        </div>
+      </div>
+    
+      <div class="column Crafts">
+        <div class="content">
+          <img src="Images/CraftsEagle.jpg" alt="Car" style="width:100%; height:10em;">
+          <h4>Soapstone Eagle</h4>
+          <p>A soapstone carving of an eagle</p>
+        </div>
+      </div>
+      <div class="column Crafts">
+        <div class="content">
+        <img src="Images/CraftEmbroidery2.jpg" alt="Car" style="width:100%; height:10em;">
+          <h4>Embroidered flowers</h4>
+          <p>A canvas board embroidered with a wreath of flowers</p>
+        </div>
+      </div>
+      <div class="column Crafts">
+        <div class="content">
+        <img src="Images/CraftsDog.png" alt="Car" style="width:100%; height:10em;">
+          <h4>Soapstone Wolf</h4>
+          <p>A soapstone carving of a wolf</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+</body>
+</html>

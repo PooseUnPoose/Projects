@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="Scripts/Theme.js"></script>
+    <link rel="stylesheet" href="Main.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://kit.fontawesome.com/a405b30641.js" crossorigin="anonymous"></script>
+</head>
+    
+
+<body>
+<!--Navigation bar-->
+<nav class="Navbar">
+<script defer src="Scripts/NavigationBarGreeting.js"></script>
+  <ul class="Navbar-Nav">
+      <li id="Greeting" class="Nav-Item">Welcome</li>
+    <li class="Nav-Item">
+      <a href="Index.html" class="Nav-Link">
+        <i class="fa-solid fa-house"></i>
+          <g class="fa-group">
+          </g>
+        </svg>
+        <span class="Link-Text">Home</span>
+      </a>
+    </li>
+
+    <li class="Nav-Item">
+      <a href="Estimates.html" class="Nav-Link">
+        <i class="fa-solid fa-circle-info"></i>
+          <g class="fa-group">
+          </g>
+        </svg>
+        <span class="Link-Text">Estimates</span>
+      </a>
+    </li>
+
+    <li class="Nav-Item">
+      <a href="Portfolio.html" class="Nav-Link">
+
+        <i class="fa-solid fa-palette"></i>
+          <g class="fa-group">
+        <span class="Link-Text">Portfolio</span>
+      </a>
+    </li>
+    
+    <li class="Nav-Item">
+      <a href="Contact.html" class="Nav-Link">
+        <i class="fa-solid fa-address-book"></i>
+          <g class="fa-group">
+        <span class="Link-Text">Contact</span>
+      </a>
+    </li>
+
+    <li class="Nav-Item" id="ThemeButton">
+      <a href="#" class="Nav-Link">
+        <i id="DarkIcon" class="fa-regular fa-sun"></i>
+        <i id="LightIcon" class="fa-regular fa-moon"></i>  
+        <g class="fa-group">
+            <span class="Link-Text">Theme</span>
+          </g>
+        </svg>
+      </a>
+    </li>
+  </ul>
+</nav>
+  <!--Navigation bar end-->
+<main>
+  <h2>Contact Page</h2>
+  <script defer src="Scripts/ContactValidation.js"></script>
+  <p>If you would like to contact me please fill out the following form.</p>
+  <br>
+  <form id="myForm" method="POST">
+    <div class="InputRow">
+      <label for="Name">Name:</label>
+      <input name="Name" id="Name" type="text" placeholder="John/Jane">
+      <span id="NameError" class="Error"> </span>
+    </div>
+    <br>
+
+    <div class="InputRow">
+      <label for="Email">Email:</label>
+      <input name="Email" id="Email" type="text" placeholder="John.Doe@Example.com">
+      <span id="EmailError" class="Error"> </span>
+    </div>
+    <br>
+    <div class="InputRow">
+      <label for="Options">Select an option:</label>
+      <select name="Options" id="Options">
+        <option value="Inquiry">Inquiry</option>
+        <option value="Request">Request</option>
+        <option value="Sales">Sales</option>
+        <option value="Sales">Email List</option>
+        <option value="Other">Other</option>
+      </select>
+      <span id="OptionsError" class="Error"> </span>
+    </div>
+    <br>
+    <div class="InputRow">
+      <label for="Message">Message:</label>
+      <br>
+      <textarea style="margin-top: -1.25em;" name="Message" id="Message" cols="21" rows="5"></textarea>
+      <span id="MessageError" class="Error"> </span>
+    </div>
+    <br>
+    <div class="InputRow">    
+      <input type="submit" id="Submit" value="Submit">
+    </div>
+  </form>
+  <div id="Reply"></div>
+  <p style="margin-bottom: 5em;">Alternatively you can email me at <a href="mailto:Example@Burner.com"> Burner@example.com</a></p>
+</main>
+</body>
+</html>

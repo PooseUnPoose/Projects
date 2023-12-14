@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="Scripts/Theme.js"></script>
+    <link rel="stylesheet" href="Main.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://kit.fontawesome.com/a405b30641.js" crossorigin="anonymous"></script>
+
+  </head>
+    
+
+<body>
+
+  <nav class="Navbar">
+    <script defer src="Scripts/NavigationBarGreeting.js"></script>
+
+    <ul class="Navbar-Nav">
+      <li id="Greeting" class="Nav-Item">Welcome</li>
+      <li class="Nav-Item">
+        <a href="Index.html" class="Nav-Link">
+          <i class="fa-solid fa-house"></i>
+            <g class="fa-group">
+            </g>
+          </svg>
+          <span class="Link-Text">Home</span>
+        </a>
+      </li>
+
+      <li class="Nav-Item">
+        <a href="Estimates.html" class="Nav-Link">
+          <i class="fa-solid fa-circle-info"></i>
+            <g class="fa-group">
+            </g>
+          </svg>
+          <span class="Link-Text">Estimates</span>
+        </a>
+      </li>
+
+      <li class="Nav-Item">
+        <a href="Portfolio.html" class="Nav-Link">
+          <i class="fa-solid fa-palette"></i>
+            <g class="fa-group">
+          <span class="Link-Text">Portfolio</span>
+        </a>
+      </li>
+      
+      <li class="Nav-Item">
+        <a href="Contact.html" class="Nav-Link">
+          <i class="fa-solid fa-address-book"></i>
+            <g class="fa-group">
+          <span class="Link-Text">Contact</span>
+        </a>
+      </li>
+
+      <li class="Nav-Item" id="ThemeButton">
+        <a href="#" class="Nav-Link">
+          <i id="DarkIcon"  class="fa-regular fa-sun"></i>
+          <i id="LightIcon" class="fa-regular fa-moon"></i>  
+          <g class="fa-group">
+              <span class="Link-Text">Theme</span>
+            </g>
+          </svg>
+        </a>
+      </li>
+
+    </ul>
+  </nav>
+  <!--End Navigation bar-->
+<main>
+  <h2>Estimates Page</h2>
+  <div class="main">
+    <h2>Estimates</h2>
+    <script defer src="Scripts/Estimate.js"></script>
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="Estimatecolumn">
+        <div class="content">
+          <img src="Images/CraftEmbroidery.jpg" alt="CraftEmbroidery" style="width:100%; height:10em;">
+          <h4>Embroidery</h4>
+          <p>Custom embroidery with a design of your choice</p>
+
+          <input type="checkbox" value="Custom Embroidery $25">
+        </div>
+      </div>
+      <div class="Estimatecolumn">
+        <div class="content">
+        <img src="Images/CraftsDog.png" alt="SoapStone Dog" style="width:100%; height:10em;">
+          <h4>Soapstone Carving</h4>
+          <p>A custom soapstone carving</p>
+          <input type="checkbox"value="Soapstone carving $50">
+        </div>
+      </div>
+      <div class="Estimatecolumn">
+        <div class="content">
+        <img src="Images/CraftsUnicorn.png" alt="Paper Mache Unicorn" style="width:100%; height:10em;">
+          <h4>Paper Mache</h4>
+          <p>Custom Paper mache animal</p>
+          <br>
+          <br>
+          <br>
+          <br>
+          <input type="checkbox"value="Paper Mache $15">
+        </div>
+      </div>
+      
+      <div class="Estimatecolumn">
+        <div class="content">
+          <img src="Images/CrochetJohnSnow.jpg" alt="CrochetJohnSnow" style="width:100%; height:10em;">
+          <h4>Crochet Doll</h4>
+          <p>A crochet doll of your favourite Movie Character</p>
+          <input type="checkbox"value="Crochet Doll $15">
+        </div>
+      </div>
+      <div class="Estimatecolumn">
+        <div class="content">
+        <img src="Images/CrochetBlanket.jpg" alt="CrochetBlanket" style="width:100%; height:10em;">
+          <h4>Crochet Balnket</h4>
+          <p>Crochet Blanket with custom sizes and colours</p>
+          
+          <input type="checkbox"value="Crochet Blanket $80 ">
+        </div>
+      </div>
+      <div class="Estimatecolumn">
+        <div class="content">
+        <img src="Images/CrochetHat.jpg" alt="CrochetHat" style="width:100%; height:10em;">
+          <h4>Crochet Clothing</h4>
+          <p>A crochet piece of outerwear (Mittens, hats, etc.)</p>
+          <input type="checkbox" value="Crochet Clothing $50">
+        </div>
+      </div>
+    
+      <div class="Estimatecolumn">
+        <div class="content">
+          <img src="Images/SketchLion.jpg" alt="Lion Sketch" style="width:100%; height:10em;">
+          <h4>Avatar</h4>
+          <p>A custom small avatar for online accounts</p>
+          <input type="checkbox"value="Avatar Drawing $10">
+        </div>
+      </div>
+      <div class="Estimatecolumn">
+        <div class="content">
+        <img src="Images/SketchBTTF.jpeg" alt="Delorian" style="width:100%; height:10em;">
+          <h4>Full Colour Art </h4>
+          <p>A drawing of your choice coloured in full</p>
+          <input type="checkbox"value="Full colour drawing $25">
+        </div>
+      </div>
+      <div class="Estimatecolumn">
+        <div class="content">
+        <img src="Images/SketchMalShrine.webp" alt="Asian Style art" style="width:100%; height:10em;">
+          <h4>Eastern Style Art</h4>
+          <p>Drawings done in an eastern style</p>
+          <input type="checkbox" value="Eastern Art $45">
+        </div>
+      </div>
+    <!-- END GRID -->
+    <a class="btn" id="GetEstimate" href="EstimateCalc.html" style="margin-left: 1em;"> Get Estimate</a>
+    </div>
+    <br>
+    <br><br>
+
+    <!-- END MAIN -->
+    </div>
+
+
+
+</main>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="Scripts/Theme.js"></script>
+    <link rel="stylesheet" href="Main.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://kit.fontawesome.com/a405b30641.js" crossorigin="anonymous"></script>
+    <script defer src="Scripts/Navigation.js"></script>
+  </head>
+    
+
+<body>
+  <script defer src="Scripts/NavigationBarGreeting.js"></script>
+  <nav class="Navbar">
+    <ul class="Navbar-Nav">
+      <li id="Greeting" class="Nav-Item">Welcome</li>
+      <li class="Nav-Item">
+        <a href="#" class="Nav-Link" onclick="redirectToHome()">
+          <i class="fa-solid fa-house"></i>
+            <g class="fa-group">
+            </g>
+          </svg>
+          <span class="Link-Text">Home</span>
+        </a>
+      </li>
+
+      <li class="Nav-Item">
+        <a href="#" class="Nav-Link" onclick="redirectToEstimate()">
+          <i class="fa-solid fa-circle-info"></i>
+            <g class="fa-group">
+            </g>
+          </svg>
+          <span class="Link-Text">Estimates</span>
+        </a>
+      </li>
+
+      <li class="Nav-Item">
+        <a href="#" class="Nav-Link" onclick="redirectToPortfolio()">
+          <i class="fa-solid fa-palette"></i>
+            <g class="fa-group">
+          <span class="Link-Text">Portfolio</span>
+        </a>
+      </li>
+      
+      <li class="Nav-Item">
+        <a href="#" class="Nav-Link" onclick="redirectToContact()">
+          <i class="fa-solid fa-address-book"></i>
+            <g class="fa-group">
+          <span class="Link-Text">Contact</span>
+        </a>
+      </li>
+
+      <li class="Nav-Item" id="ThemeButton">
+        <a href="#" class="Nav-Link">
+          <i id="DarkIcon" class="fa-regular fa-sun"></i>
+          <i id="LightIcon" class="fa-regular fa-moon"></i>  
+          <g class="fa-group">
+              <span class="Link-Text">Theme</span>
+            </g>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!--End Navigation bar-->
+  
+  <main>
+    <div class="Introduction">
+      <h2> Hi I'm an artist</h2>
+      <p>I enjoy a wide variety of different crafts, they range from quilting, to crochet, to drawing.</p>
+      <p>I have been doing these crafts for a long time, and I have a lot of fun doing them.</p>
+      <h2>Some examples of my Work</h2>
+    </div>
+
+   
+</section>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="Scripts/Slides.js"></script>
+    <!--Insert Slideshow here-->
+    <div class="cycle-slideshow" 
+        data-cycle-fx="fadeout"
+        data-cycle-timeout="2000"
+        data-cycle-caption=".cycle-caption"
+        data-cycle-pause-on-hover="true"
+        data-cycle-caption-template="Slide {{slideNum}} of {{slideCount}}" style="  margin-left: 12em;">
+    
+    <img src="Images/SketchMalShrine.webp" style="width: 15em; height: 15em;" alt="Malevolent Shrine from Anime 'Jujutsu Kaisen'" data-cycle-title="Anime">
+    <img src="Images/CraftsEagle.jpg" style="width: 15em; height: 15em;" alt="A soapstone Eagle" data-cycle-title="Soapstone">
+    <img src="Images/CrochetBlanket.jpg" style="width: 15em; height: 15em;" alt="A crochet blanket" data-cycle-title="Blanket">
+    <img src="Images/SketchObiWan.jpg" style="width: 15em; height: 15em;" alt="A drawing of Obi Wan Kenobi from 'Starwars Episode 2: Attack of the Clones'" data-cycle-title="Starwars">
+    <img src="Images/CrochetHat.jpg" style="width: 15em; height: 15em;" alt="A Crochet Hat" data-cycle-title="Hat">
+    <div class="cycle-caption"></div> 
+  </div>   
+
+  <div class="Conclusion">
+    <p>If you would like to see more of my creations you can check the <a href="Portfolio.html">Portfolio</a> page! </p>
+  </div>
+</main>
+</body>
+</html>
