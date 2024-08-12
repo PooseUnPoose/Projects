@@ -1,1 +1,1 @@
-This is a Github Repo for all the school projects I do at UFV
+This is a Github Repo for all the school projects I do.
